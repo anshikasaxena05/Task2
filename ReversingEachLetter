@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class ReversingEachLetter {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String");
+		String s=sc.nextLine()+" ",st="",str="";
+		for(int i=0;i<s.length();i++)
+		{
+			if(s.charAt(i)==' ')
+			{
+				str=str+" "+st;
+				st="";
+			}
+			else
+			st=s.charAt(i)+st;
+		}
+		System.out.println("String after reversing the letters is : "+str);			
+		sc.close();
+			
+	}
+}
