@@ -1,0 +1,22 @@
+import java.util.*;
+public class RemoveElementArraylist {
+	public static void main(String args[])
+	{
+		ArrayList<Integer> arr=new ArrayList<>();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the numbers you want to enter in the list");
+		int n=sc.nextInt();
+		for(int i=0;i<n;i++)
+		{
+			int num=sc.nextInt();
+			arr.add(num);
+		}
+		System.out.println(arr);
+		System.out.println("Enter the index you want to delete");
+		int y=sc.nextInt();
+		arr.remove(y);
+		System.out.println("List after deletion of element At index "+y+" is : "+arr);
+		sc.close();
+		
+	}
+}
